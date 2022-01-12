@@ -1,0 +1,36 @@
+{
+  "type": "create:mechanical_crafting",
+
+  "pattern":
+  [ " B ",
+    "LDL",
+    " R ",
+    "M M"],
+  "key":
+  {
+    "B":
+    {
+      "item": "minecraft:diamond_block"
+    },
+    "D":
+    {
+      "item": "createa:diode"
+    },
+    "R":
+    {
+      "item": "create:brasscasing"
+    },
+    "L":
+    {
+      "item": "minecraft:lightning_rod"
+    },
+    "M":
+    {
+      "item": "create:precision_mechanism"
+    }
+  },
+  "result":{
+    "item": "createalchemy:alchemical_laser",
+    "count": 1
+  }
+}

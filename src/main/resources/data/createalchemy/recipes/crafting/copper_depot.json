@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [ "L",
+    "B",
+    "C"],
+  "key":
+  {
+    "L":
+    {
+      "item": "minecraft:lightning_rod"
+    },
+    "B":
+    {
+      "item": "create:copper_plate"
+    },
+    "C":
+    {
+      "item": "create:copper_casing"
+    }
+  },
+  "result":{
+    "item": "createalchemy:copper_depot",
+    "count": 1
+  }
+}
