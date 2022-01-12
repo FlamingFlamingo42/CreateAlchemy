@@ -1,0 +1,21 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "top": "createalchemy:block/jar",
+    "side": "createalchemy:block/filled-jar"
+  },
+  "elements": [
+    {
+      "from": [1,0,1],
+      "to": [15, 15, 15],
+      "faces": {
+        "down":  { "texture": "#top", "cullface": "down" },
+        "up":    { "texture": "#top" },
+        "north": { "texture": "#side" },
+        "south": { "texture": "#side" },
+        "west":  { "texture": "#side" },
+        "east":  { "texture": "#side" }
+      }
+    }
+  ]
+}

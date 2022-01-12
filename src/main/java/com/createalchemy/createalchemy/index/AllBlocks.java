@@ -1,17 +1,15 @@
 package com.createalchemy.createalchemy.index;
 
 import com.createalchemy.createalchemy.CreateAlchemy;
-import com.createalchemy.createalchemy.blocks.AlchemicalBlock;
+import com.createalchemy.createalchemy.blocks.AlchemicalLaserBlock;
 import com.createalchemy.createalchemy.blocks.CentrifugeBlock;
+import com.createalchemy.createalchemy.blocks.CopperDepotBlock;
 import com.createalchemy.createalchemy.blocks.LiquifierBlock;
-import com.createalchemy.createalchemy.groups.ModGroup;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.content.AllSections;
 import com.simibubi.create.foundation.block.BlockStressDefaults;
 import com.simibubi.create.foundation.data.CreateRegistrate;
+import com.simibubi.create.foundation.data.SharedProperties;
 import com.simibubi.create.repack.registrate.util.entry.BlockEntry;
-import com.simibubi.create.repack.registrate.Registrate;
 
 import net.minecraft.world.level.block.Block;
 
@@ -28,18 +26,34 @@ public class AllBlocks {
     public static final BlockEntry<LiquifierBlock> LIQUIFIER =
             REGISTRATE.block("liquifier", LiquifierBlock::new)
                     .transform(BlockStressDefaults.setImpact(4.0))
+                    .defaultLang()
+                    .simpleItem()
+                    .defaultLoot()
                     .lang("Liquifier")
                     .register();
 
     public static final BlockEntry<CentrifugeBlock> CENTRIFUGE =
             REGISTRATE.block("centrifuge", CentrifugeBlock::new)
                     .transform(BlockStressDefaults.setImpact(4.0))
+                    .defaultLang()
+                    .simpleItem()
+                    .defaultLoot()
                     .lang("Centrifuge")
                     .register();
 
-    public static final BlockEntry<AlchemicalBlock> ALCHEMICAL =
-            REGISTRATE.block("alchemical", AlchemicalBlock::new)
+    public static final BlockEntry<AlchemicalLaserBlock> ALCHEMICAL_LASER =
+            REGISTRATE.block("alchemical", AlchemicalLaserBlock::new)
                     .transform(BlockStressDefaults.setImpact(8.0))
+                    .defaultLang()
+                    .simpleItem()
+                    .defaultLoot()
+                    .register();
+
+    public static final BlockEntry<CopperDepotBlock> COPPER_DEPOT =
+            REGISTRATE.block("copper_depot", CopperDepotBlock::new)
+                    .defaultLang()
+                    .simpleItem()
+                    .defaultLoot()
                     .register();
 
 
@@ -47,11 +61,18 @@ public class AllBlocks {
     public static final BlockEntry<Block> JAR =
             REGISTRATE.block("jar", Block::new)
                     .properties(p -> p.instabreak())
+                    .defaultLang()
+                    .simpleItem()
+                    .defaultLoot()
                     .register();
 
     public static final BlockEntry<Block> FILLED_JAR =
             REGISTRATE.block("filled_jar", Block::new)
+                    .initialProperties(SharedProperties::stone)
                     .properties(p -> p.instabreak())
+                    .defaultLang()
+                    .simpleItem()
+                    .defaultLoot()
                     .register();
 
     //Catalysts
@@ -61,6 +82,9 @@ public class AllBlocks {
     public static final BlockEntry<Block> CHAOS_CATALYST =
             REGISTRATE.block("chaos_catalyst", Block::new)
                     .properties(p -> p.instabreak())
+                    .defaultLang()
+                    .simpleItem()
+                    .defaultLoot()
                     .register();
 
 
