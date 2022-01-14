@@ -13,8 +13,6 @@ public class AllItems {
             .creativeModeTab(() -> CREATIVE_TAB);
 
 
-    public static final ItemEntry<Item> TEST = REGISTRATE.item("test", Item::new).register();
-
 
     //Put all entries above this
     public static void register() {}

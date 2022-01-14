@@ -1,10 +1,9 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "block/block",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "alchemical_laser",
-		"particle": "alchemical_laser"
+		"0": "createalchemy:block/alchemical_laser",
+		"particle": "createalchemy:block/alchemical_laser"
 	},
 	"elements": [
 		{
@@ -132,20 +131,33 @@
 				"up": {"uv": [9, 9.25, 10.5, 9.5], "texture": "#0"},
 				"down": {"uv": [9, 8.75, 10.5, 9], "rotation": 180, "texture": "#0"}
 			}
-		},
-		{
-			"from": [7, 7, 15],
-			"to": [9, 9, 16],
-			"faces": {
-				"north": {"uv": [3.5, 9.75, 3, 9.25], "rotation": 180, "texture": "#0"},
-				"east": {"uv": [4.5, 9.5, 5, 9.75], "rotation": 90, "texture": "#0"},
-				"south": {"uv": [4, 9.25, 3.5, 9.75], "texture": "#0"},
-				"west": {"uv": [5.5, 9.5, 6, 9.75], "rotation": 270, "texture": "#0"},
-				"up": {"uv": [5, 9.5, 5.5, 9.75], "texture": "#0"},
-				"down": {"uv": [9.5, 3.25, 10, 3.5], "rotation": 180, "texture": "#0"}
-			}
 		}
 	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"firstperson_righthand": {
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_lefthand": {
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"translation": [0, 1, 1.25],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"gui": {
+			"rotation": [30, -135, 0],
+			"translation": [2.5, -0.5, 0],
+			"scale": [0.625, 0.625, 0.625]
+		}
+	},
 	"groups": [
 		{
 			"name": "LowerRing",
@@ -170,12 +182,6 @@
 			"origin": [8, 8, 8],
 			"color": 0,
 			"children": [7, 8, 9]
-		},
-		{
-			"name": "Shaft",
-			"origin": [8, 8, 8],
-			"color": 0,
-			"children": [10]
 		}
 	]
 }

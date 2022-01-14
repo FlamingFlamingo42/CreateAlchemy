@@ -42,7 +42,7 @@ public class AllBlocks {
                     .register();
 
     public static final BlockEntry<AlchemicalLaserBlock> ALCHEMICAL_LASER =
-            REGISTRATE.block("alchemical", AlchemicalLaserBlock::new)
+            REGISTRATE.block("alchemical_laser", AlchemicalLaserBlock::new)
                     .transform(BlockStressDefaults.setImpact(8.0))
                     .defaultLang()
                     .simpleItem()
