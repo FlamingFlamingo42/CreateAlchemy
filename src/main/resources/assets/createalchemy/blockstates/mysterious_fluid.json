@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "createalchemy:block/mysterious_fluid"
+    }
+  }
+}

@@ -1,10 +1,7 @@
 package com.createalchemy.createalchemy.index;
 
 import com.createalchemy.createalchemy.CreateAlchemy;
-import com.createalchemy.createalchemy.blocks.AlchemicalLaserBlock;
-import com.createalchemy.createalchemy.blocks.CentrifugeBlock;
-import com.createalchemy.createalchemy.blocks.CopperDepotBlock;
-import com.createalchemy.createalchemy.blocks.LiquifierBlock;
+import com.createalchemy.createalchemy.blocks.*;
 
 import com.simibubi.create.foundation.block.BlockStressDefaults;
 import com.simibubi.create.foundation.data.CreateRegistrate;
@@ -58,8 +55,8 @@ public class AllBlocks {
 
 
     //Basic Jars
-    public static final BlockEntry<Block> JAR =
-            REGISTRATE.block("jar", Block::new)
+    public static final BlockEntry<JarBlock> JAR =
+            REGISTRATE.block("jar", JarBlock::new)
                     .properties(p -> p.instabreak())
                     .defaultLang()
                     .simpleItem()

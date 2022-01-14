@@ -1,10 +1,7 @@
 package com.createalchemy.createalchemy.index;
 
 import com.createalchemy.createalchemy.CreateAlchemy;
-import com.createalchemy.createalchemy.groups.ModGroup;
 import com.simibubi.create.foundation.data.CreateRegistrate;
-import com.simibubi.create.repack.registrate.util.entry.ItemEntry;
-import net.minecraft.world.item.Item;
 
 import static com.createalchemy.createalchemy.CreateAlchemy.CREATIVE_TAB;
 

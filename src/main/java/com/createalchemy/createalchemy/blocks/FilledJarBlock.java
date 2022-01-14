@@ -1,19 +1,30 @@
 package com.createalchemy.createalchemy.blocks;
 
 import com.createalchemy.createalchemy.index.AllBlocks;
+import com.createalchemy.createalchemy.index.AllShapes;
 import com.createalchemy.createalchemy.recipe.AlchemyFillRecipe;
+import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
 import net.minecraft.nbt.StringTag;
 import net.minecraft.nbt.Tag;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.fluids.FluidStack;
 import org.apache.logging.log4j.LogManager;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class FilledJarBlock {
+public class FilledJarBlock{
+
+    public VoxelShape getShape(BlockState state, BlockGetter worldIn, BlockPos pos, CollisionContext context) {
+        return AllShapes.FILLED_JAR;
+    }
 
     public static List<String> getJarContent(ItemStack stack) {
         CompoundTag tag = stack.getTag();

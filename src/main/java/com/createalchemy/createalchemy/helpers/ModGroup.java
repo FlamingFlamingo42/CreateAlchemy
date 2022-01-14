@@ -1,4 +1,4 @@
-package com.createalchemy.createalchemy.groups;
+package com.createalchemy.createalchemy.helpers;
 
 import com.createalchemy.createalchemy.CreateAlchemy;
 
