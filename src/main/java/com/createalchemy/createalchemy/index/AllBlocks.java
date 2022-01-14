@@ -8,6 +8,7 @@ import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.foundation.data.SharedProperties;
 import com.simibubi.create.repack.registrate.util.entry.BlockEntry;
 
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Block;
 
 import static com.createalchemy.createalchemy.CreateAlchemy.CREATIVE_TAB;
@@ -44,6 +45,7 @@ public class AllBlocks {
                     .defaultLang()
                     .simpleItem()
                     .defaultLoot()
+                    .lang("Alchemical Laser")
                     .register();
 
     public static final BlockEntry<CopperDepotBlock> COPPER_DEPOT =
@@ -51,6 +53,7 @@ public class AllBlocks {
                     .defaultLang()
                     .simpleItem()
                     .defaultLoot()
+                    .lang("Copper Depot")
                     .register();
 
 
@@ -61,6 +64,8 @@ public class AllBlocks {
                     .defaultLang()
                     .simpleItem()
                     .defaultLoot()
+                    .lang("Jar")
+                    .addLayer(() -> RenderType::cutout)
                     .register();
 
     public static final BlockEntry<Block> FILLED_JAR =
@@ -69,20 +74,26 @@ public class AllBlocks {
                     .properties(p -> p.instabreak())
                     .defaultLang()
                     .simpleItem()
+                    .lang("Filled Jar")
+                    .addLayer(() -> RenderType::cutout)
                     .defaultLoot()
                     .register();
 
     //Catalysts
-
-    //Do cool procedural JSON stuff
-
     public static final BlockEntry<Block> CHAOS_CATALYST =
             REGISTRATE.block("chaos_catalyst", Block::new)
+                    .initialProperties(SharedProperties::stone)
                     .properties(p -> p.instabreak())
                     .defaultLang()
                     .simpleItem()
+                    .lang("Chaos Catalyst")
+                    .addLayer(() -> RenderType::cutout)
                     .defaultLoot()
                     .register();
+
+    //Do cool procedural JSON stuff
+
+
 
 
     //Put all entries above this
