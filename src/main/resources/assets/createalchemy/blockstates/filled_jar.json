@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
-      "model": "createalchemy:block/filled_jar"
+    "fillLevel=0": {
+      "model": "createalchemy:block/jar"
+    },
+    "fillLevel=1": {
+      "model": "createalchemy:block/filled_jar_1"
+    },
+    "fillLevel=2": {
+      "model": "createalchemy:block/filled_jar_2"
+    },
+    "fillLevel=3": {
+      "model": "createalchemy:block/filled_jar_3"
+    },
+    "fillLevel=4": {
+      "model": "createalchemy:block/filled_jar_4"
     }
   }
 }

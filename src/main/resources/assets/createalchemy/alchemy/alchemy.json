@@ -1,0 +1,40 @@
+{
+  "groups":
+  {
+    "igneous": {
+      "0": "minecraft:stone",
+      "1": "minecraft:basalt",
+      "2": "minecraft:andesite",
+      "3": "minecraft:diorite",
+      "4": "minecraft:granite"
+    },
+    "metal": {
+      "0": "minecraft:iron_ingot",
+      "1": "minecraft:gold_ingot",
+      "3": "minecraft:copper_ingot",
+      "4": "create:zinc_ingot",
+      "5": "create:brass_ingot"
+    },
+    "shinies": {
+      "0": "minecraft:diamond",
+      "1": "minecraft:emerald",
+      "2": "minecraft:quartz",
+      "3": "minecraft:amythyst_shard",
+      "4": "create:rose_quartz"
+    },
+    "foods": {
+      "0": "minecraft:potato",
+      "1": "minecraft:carrot",
+      "2": "minecraft:bread",
+      "3": "minecraft:chorus_fruit",
+      "4": "minecraft:glow_berries"
+    },
+    "nether": {
+      "0": "minecraft:netherrack",
+      "1": "minecraft:netherwart",
+      "2": "minecraft:blazerod",
+      "3": "minecraft:soulsand",
+      "4": "minecraft:twisted_vine"
+    }
+  }
+}

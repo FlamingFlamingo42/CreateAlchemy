@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "createalchemy:block/liquifier"
+    },
+    "facing=south": {
+      "model": "createalchemy:block/liquifier",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "createalchemy:block/liquifier",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "createalchemy:block/liquifier",
+      "y": 90
+    }
+  }
+}

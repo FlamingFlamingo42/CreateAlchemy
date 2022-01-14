@@ -1,0 +1,29 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "createalchemy:block/alchemical_laser"
+    },
+    "facing=south": {
+      "model": "createalchemy:block/alchemical_laser",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "createalchemy:block/alchemical_laser",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "createalchemy:block/alchemical_laser",
+      "y": 90
+    },
+    "facing=up": {
+      "model": "createalchemy:block/alchemical_laser",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "createalchemy:block/alchemical_laser",
+      "x": 270,
+      "y": 90
+    }
+  }
+}
