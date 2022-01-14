@@ -4,14 +4,17 @@ import com.createalchemy.createalchemy.groups.ModGroup;
 import com.createalchemy.createalchemy.index.AllBlocks;
 import com.createalchemy.createalchemy.index.AllFluids;
 import com.createalchemy.createalchemy.index.AllItems;
+import com.simibubi.create.AllRecipeTypes;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.repack.registrate.util.NonNullLazyValue;
 import com.tterrag.registrate.Registrate;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -50,6 +53,10 @@ public class CreateAlchemy
         AllItems.register();
         AllFluids.register();
         //AllTileEntities.register();
+
+        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        IEventBus forgeEventBus = MinecraftForge.EVENT_BUS;
+        modEventBus.addGenericListener(RecipeSerializer.class, AllRecipeTypes::register);
 
     }
 
