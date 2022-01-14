@@ -4,7 +4,7 @@ import com.createalchemy.createalchemy.groups.ModGroup;
 import com.createalchemy.createalchemy.index.AllBlocks;
 import com.createalchemy.createalchemy.index.AllFluids;
 import com.createalchemy.createalchemy.index.AllItems;
-import com.simibubi.create.AllRecipeTypes;
+import com.createalchemy.createalchemy.index.AllRecipeTypes;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.repack.registrate.util.NonNullLazyValue;
 import com.tterrag.registrate.Registrate;

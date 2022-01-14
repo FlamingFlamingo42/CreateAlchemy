@@ -64,6 +64,7 @@ public class SpecialRecipeParams<R extends SpecialRecipeParams<R>> extends Proce
             this.base = base;
             this.predicate = predicate;
             this.parent = parent;
+            this.amountRequired = base.getRequiredAmount();
         }
 
         public FluidStack getLast() {
